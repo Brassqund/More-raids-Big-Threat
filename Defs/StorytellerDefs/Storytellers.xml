@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+ 	<StorytellerDef>
+		<defName>MoreRaid</defName>
+    <label>More Raid</label>
+		<description>More raids.</description>
+    <portraitLarge>raid</portraitLarge>
+    <portraitTiny>raidt</portraitTiny>
+    <listOrder>40</listOrder>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>50</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_RandomMain">
+        <minDaysPassed>2.5</minDaysPassed>
+        <incidentMtb>0.87</incidentMtb>
+        <maxThreatBigIntervalDays>1</maxThreatBigIntervalDays>
+        <categoryWeights>
+          <Misc>5.5</Misc>
+          <OrbitalVisitor>1</OrbitalVisitor>
+          <AllyArrival>1</AllyArrival>
+          <ShipChunkDrop>0.5</ShipChunkDrop>
+          <ThreatSmall>1</ThreatSmall>
+          <ThreatBig>9</ThreatBig>
+        </categoryWeights>
+      </li>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>0</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+</StorytellerDefs>
